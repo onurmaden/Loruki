@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply box-border p-0 m-0;
+  }
+  body {
+    @apply font-lato font-light;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container {
+    @apply flex max-w-[1100px] mx-auto justify-between items-center h-full px-10;
+  }
+  header a{
+    @apply font-light p-[10px] hover:border-solid hover:border-b-2 hover:border-white mx-[5px];
+  }
+  .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #047aed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    transform: scale(0.98);
+    
+  }
+  h1, h2 {
+    font-weight:300;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  p {
+    margin: 10px 0;
+  }
+  h3{
+    font-size: 18.72px;
+  }
+  #showcase::before,#showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+  }
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+  }
+  .form-control{
+    @apply p-[3px] my-[30px]
+  }
+  .input-control{
+    @apply w-full outline-none border-b border-[#b4becb] h-6
+  }
+  .languages{
+    @apply flex items-center justify-center flex-col
+  }
+  .languages.card {
+    @apply mx-[10px] mt-4 mb-10 hover:-translate-y-4 transition duration-200 ease-in
+  }
+  .languages h4{
+    @apply mb-[10px] text-xl font-bold
+  }
+}
