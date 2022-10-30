@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply w-screen overflow-x-hidden
+  }
   * {
     @apply box-border p-0 m-0;
   }
@@ -12,7 +15,7 @@
     line-height: 1.6;
   }
   .container {
-    @apply flex max-w-[1100px] mx-auto justify-between items-center h-full px-10;
+    @apply flex flex-col sm:flex-row max-w-[1100px] mx-auto justify-between items-center h-full px-10;
   }
   header a{
     @apply font-light p-[10px] hover:border-solid hover:border-b-2 hover:border-white mx-[5px];
@@ -76,5 +79,43 @@
   }
   .languages h4{
     @apply mb-[10px] text-xl font-bold
+  }
+  #stats .container.grid h3 {
+    @apply text-3xl
+  }
+  #stats .container.grid p {
+    @apply text-xl
+}
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%)
+    }
+    100% {
+      transform: translateX(0)
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0)
+    }
+  }
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%)
+    }
+    100% {
+      transform: translateY(0)
+    }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%)
+    }
+    100% {
+      transform: translateY(0)
+    }
   }
 }

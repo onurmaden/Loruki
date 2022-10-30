@@ -14,30 +14,36 @@
 		<link rel="stylesheet" href="dist/output.css" />
 		<title>Loruki | Cloud Hosting for Everyone</title>
 	</head>
-	<body>
-		<header class="bg-primary text-white h-[70px]">
+	<body class="overflow-x-hidden">
+		<header class="bg-primary text-white sm:h-[70px]">
 			<div class="container">
 				<h1 class="text-[32px]">Loruki.</h1>
 
-				<ul class="flex">
+				<ul
+					class="flex py-2 sm:py-0 items-center justify-center p-[10px] bg-[rgba(0,0,0,0.1)] sm:bg-inherit"
+				>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="features.html">Features</a></li>
-					<li><a href="docs.html">Docs</a></li>
+					<li><a href="index.html">Features</a></li>
+					<li><a href="index.html">Docs</a></li>
 				</ul>
 			</div>
 		</header>
-		<section id="showcase" class="bg-primary h-[400px] relative overflow-visible">
-			<div class="container grid grid-cols-[55%_45%] gap-[30px]">
-				<div class="text-white">
+		<section id="showcase" class="bg-primary md:h-[400px] relative pt-10 sm:pt-0">
+			<div class="container pt-10 md:pt-0 grid md:grid-cols-[55%_45%] gap-[30px]">
+				<div
+					class="text-white text-center md:text-start animate-[slideInFromTop_1s_ease-in] md:animate-[slideInFromLeft_1s_ease-in]"
+				>
 					<h1 class="text-[40px]">Easier Deployment</h1>
 					<p class="my-5">
 						Deploy web apps of all kinds, from large scale enterprise APIs to static
 						websites for individuals. Fill out the form to try a demo of our platform
 					</p>
-					<a href="" class="btn border border-white border-solid">Read More</a>
+					<a href="index.html" class="btn border border-white border-solid"
+						>Read More</a
+					>
 				</div>
 				<div
-					class="flex flex-col card h-[350px] w-[400px] p-10 m-[10px] relative top-[60px] z-10 justify-center"
+					class="flex flex-col card md:h-[350px] md:w-[400px] p-10 m-[10px] md:relative md:top-[60px] z-10 justify-center animate-[slideInFromBottom_1s_ease-in] md:animate-[slideInFromRight_1s_ease-in]"
 				>
 					<h2 class="my-[10px] text-2xl h-[27px]">Request a Demo</h2>
 					<form>
@@ -80,14 +86,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="pt-24">
+		<section id="stats" class="pt-24 animate-[slideInFromBottom_1s_ease-in]">
 			<div class="container flex flex-col">
 				<h3 class="max-w-[500px] stats-heading text-center my-1">
 					Welcome to the best platform for building applications of all types with
 					modern architecture and scaling
 				</h3>
 				<div
-					class="container grid grid-cols-3 justify-between items-center text-center my-4"
+					class="container grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 justify-center md:justify-between items-center text-center mt-6 mb-12"
 				>
 					<div>
 						<i class="fas fa-server fa-3x"></i>
@@ -107,9 +113,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="">
-			<div class="container grid grid-cols-3 grid-rows-2">
-				<img src="images/cli.png" alt="" class="col-span-2 row-span-2" />
+		<section id="install" class="">
+			<div
+				class="container grid grid-rows-3 grid-cols-1 md:grid-cols-3 md:grid-rows-2"
+			>
+				<img src="images/cli.png" alt="" class="md:col-span-2 sm:row-span-2" />
 				<div class="card">
 					<h3>Easy to use, cross platform CLI</h3>
 				</div>
@@ -118,21 +126,24 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-primary py-6 my-6">
-			<div class="container grid grid-cols-[4fr_3fr]">
+		<section id="cloud" class="bg-primary py-6 my-6">
+			<div
+				class="container items-center justify-center grid md:grid-cols-[4fr_3fr]"
+			>
 				<div class="text-center text-white">
 					<h2 class="text-[3rem]">Extreme Cloud Hosting</h2>
 					<p class="lead my-[1rem]">
 						Cloud hosting like you've never seen. Fast, efficient and scalable
 					</p>
-					<a href="features.html" class="btn bg-dark">Read More</a>
+					<a href="index.html" class="btn bg-dark">Read More</a>
 				</div>
-				<img src="images/cloud.png" alt="" />
+
+				<img src="images/cloud.png" alt="" class="pt-3" />
 			</div>
 		</section>
-		<section class="">
+		<section id="languages" class="">
 			<h2 class="text-center text-[2rem] my-[1.5rem]">Supported Languages</h2>
-			<div class="container flex-wrap">
+			<div class="container flex-row flex-wrap justify-center items-center">
 				<div class="languages card">
 					<h4>Node.js</h4>
 					<img src="images/logos/node.png" alt="" />
@@ -164,16 +175,16 @@
 			</div>
 		</section>
 		<footer class="bg-dark text-white">
-			<div class="container grid grid-cols-3 py-16">
+			<div class="container grid md:grid-cols-3 py-16">
 				<div>
 					<h1 class="text-[32px]">Loruki</h1>
 					<p>Copyright &copy; 2020</p>
 				</div>
-				<nav>
+				<nav class="py-3">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="features.html">Features</a></li>
-						<li><a href="docs.html">Docs</a></li>
+						<li><a href="index.html">Features</a></li>
+						<li><a href="index.html">Docs</a></li>
 					</ul>
 				</nav>
 				<div class="space-x-5">
